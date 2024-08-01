@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: . # Adjust this path if your Dockerfile is located elsewhere
+      target: dev
+    restart: always
+    command: npm run dev
+    environment:
+      - NODE_ENV=development 
+      # Uncomment the following line if you're using Windows and need to enable polling for file changes
+      # - WATCHPACK_POLLING=true
+    volumes:
+      - .:/app # Mounts the current directory to /app in the container
+      - /app/node_modules # Ensures the container uses its own node_modules directory
+    ports:
+      - "5000:5000"

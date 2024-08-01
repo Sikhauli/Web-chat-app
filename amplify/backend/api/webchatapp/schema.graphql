@@ -1,0 +1,17 @@
+
+type Contact @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  email: String!
+  phone: String!
+  owner: String
+}
+
+type Message @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  content: String!
+  image: String
+  sender: String!
+  receiver: String!
+  createdAt: AWSDateTime!
+}

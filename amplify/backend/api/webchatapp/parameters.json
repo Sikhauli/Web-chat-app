@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "webchatapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authwebchatappcdd4d7b6",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-webchatapp-dev-52c52-authRole",
+      "UnauthRoleArn": "arn:aws:iam::365669700817:role/amplify-webchatapp-dev-52c52-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::365669700817:role/amplify-webchatapp-dev-52c52-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-webchatapp-dev-52c52-deployment",
+      "UnauthRoleName": "amplify-webchatapp-dev-52c52-unauthRole",
+      "StackName": "amplify-webchatapp-dev-52c52",
+      "StackId": "arn:aws:cloudformation:ap-south-1:365669700817:stack/amplify-webchatapp-dev-52c52/4d9fe790-4b40-11ef-b315-0a99391dc261",
+      "AmplifyAppId": "d3aztt7fxeh5qr"
+    },
+    "categories": {
+      "auth": {
+        "webchatappcdd4d7b6": {}
+      },
+      "api": {
+        "webchatapp": {}
+      }
+    }
+  }
+}
